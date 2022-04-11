@@ -1,0 +1,19 @@
+/* overall */
+
+/* header 768-1439px */
+@media(max-width: 1439px){
+  html{
+    font-size: 0.694vw;
+  }
+  :root{
+    --header-font-size: 1.5rem;
+  }
+  #header-li{
+    margin: 0 2rem;
+  }
+
+    #header-nav .logo-box{
+    margin-left: 11rem;
+    margin-right: 30rem;
+  }
+}
