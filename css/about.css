@@ -1,0 +1,263 @@
+/* 変数 */
+:root{
+  --header-font-size: 15px;
+}
+
+
+/* header */
+#header-nav{
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+#header-nav .logo-box{
+  margin-left: 110px;
+  margin-right: 300px;
+}
+#header-ul{
+  display: flex;
+}
+#header-li{
+  margin: 0 25px;
+}
+#header-a{
+  font-size: var(--header-font-size);
+  letter-spacing: 0.1;
+  font-weight: 500;
+}
+#header-a:hover{
+  color: #3f0ca6;
+}
+
+.team-info{
+  width: 140px;
+  height: 90px;
+  background: linear-gradient(to bottom, #209cff 0%, #68e0cf 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+.team-info a{
+  width: 100%;
+  height: 100%;
+}
+.team-info img{
+  margin: 9PX auto 0;
+}
+#team-all{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* header-end */
+
+
+
+#main-mv{
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+#main-mv p{
+  font-family: "Verdana";
+  font-size: 100px;
+  letter-spacing: 0.6em;
+  font-weight: bold;
+  font-style: italic;
+  color: #dbdbdb;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  line-height: 100px;
+
+}
+#main-mv h1{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  font-size: 48px;
+  color: #3f0ca6;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+/* charter-section */
+
+#charter{
+  text-align: center;
+  padding: 50px 0;
+}
+.section-title{
+  font-size: 38px;
+  color: #3f0ca6;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+#charter ul{
+  text-align: left;
+  width: 1000px;
+  margin: 30px auto 50px;
+  padding-left: 150px;
+}
+#charter ul li{
+  list-style-type:disc;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 36px;
+}
+#claim{
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: #3f0ca6;
+  margin-bottom: 45px;
+}
+#claim span{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 36px;
+  color: black;
+}
+
+#practice-images{
+  display: flex;
+  width: 100%;
+  height: 230px;
+}
+.children{
+  width: calc(100% / 3);
+  max-width: none;
+}
+.children img{
+  object-fit: cover;
+  width: 100%;
+}
+
+/* concept-section */
+
+#concept{
+  padding: 100px 0;
+  width: 1185px;
+  margin: 0 auto;
+}
+#en-title{
+  font-family: "Verdana";
+  font-size: 70px;
+  color: #3f0ca6;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  font-style: italic;
+  opacity: .5;
+  margin-bottom: -45px;
+  line-height: 100px;
+}
+
+#concept-image{
+  max-width: none;
+  width: 700px;
+  height: 350px;
+  margin: 0 auto;
+}
+#concept-image img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#gray-box{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f7f7;
+  padding: 150px 180px 60px;
+  margin-top: -150px;
+}
+#gray-box .section-title{
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.explain{
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding-left: 30px;
+}
+
+/* strong-point-section */
+
+#strong-point{
+  padding: 100px 0;
+  text-align: center;
+}
+#strong-point .section-title span{
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: black;
+  margin-top: 0px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#strong-point-flex-wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
+.strong-point-flex{
+  display: flex;
+  position: relative;
+  height: 300px;
+  margin-bottom: 80px;
+}
+.foot-text{
+  position: absolute;
+  bottom: -35px;
+  left: -35px;
+  color: #ACB6E5;
+  background: linear-gradient(to left, #209cff 0%, #68e0cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Verdana";
+  font-size: 50px;
+  opacity: .5;
+  letter-spacing: 0.35em;
+
+}
+.strong-images,.strong-reason{
+  width: 50%;
+}
+.strong-reason{
+  padding-left: 60px;
+  text-align: left;
+}
+.strong-reason h3{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.strong-reason p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
