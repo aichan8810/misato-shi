@@ -1,0 +1,163 @@
+/* 変数 */
+:root{
+  --header-font-size: 15px;
+}
+
+
+/* header */
+#header-nav{
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+#header-nav .logo-box{
+  margin-left: 110px;
+  margin-right: 300px;
+}
+#header-ul{
+  display: flex;
+}
+#header-li{
+  margin: 0 25px;
+}
+#header-a{
+  font-size: var(--header-font-size);
+  letter-spacing: 0.1;
+  font-weight: 500;
+}
+#header-a:hover{
+  color: #3f0ca6;
+}
+
+.team-info{
+  width: 140px;
+  height: 90px;
+  background: linear-gradient(to bottom, #209cff 0%, #68e0cf 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+.team-info a{
+  width: 100%;
+  height: 100%;
+}
+.team-info img{
+  margin: 9PX auto 0;
+}
+#team-all{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* header-end */
+
+
+
+#main-mv{
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+#main-mv p{
+  font-family: "Verdana";
+  font-size: 100px;
+  letter-spacing: 0.6em;
+  font-weight: bold;
+  font-style: italic;
+  color: #dbdbdb;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  line-height: 100px;
+
+}
+#main-mv h1{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  font-size: 48px;
+  color: #3f0ca6;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+/* text-area-section */
+#text-area{
+  text-align: center;
+  padding: 50px 0;
+}
+#text-area p{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  line-height: 36px;
+}
+
+/* teams-section */
+#teams
+{
+  padding: 130px 80px;
+}
+#teams-flex-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.team-name{
+  width: 300px;
+  height: fit-content;
+  border: 1px solid #3f0ca6;
+  margin-bottom: 30px;
+}
+.team-name-top{
+  background-color: #ffc100;
+  padding: 15px 0;
+  text-align: center;
+}
+.team-name-top p{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 36px;
+}
+iframe{
+  height: 800px;
+  width: 550px;
+  margin: 0 40px;
+}
+.team-name-bottom{
+  display: flex;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.team-name-bottom a{
+  font-size: 12px;
+  line-height: 36px;
+  font-weight: 500;
+  padding: 0 20px;
+  letter-spacing: 0;
+}
+.team-qr{
+  width: 70px;
+  height: 70px;
+  margin-right: 0;
+}
+.team-qr img{
+  width: 100%;
+}
