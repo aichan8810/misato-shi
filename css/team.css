@@ -125,8 +125,9 @@
 }
 .team-name-top{
   background-color: #ffc100;
-  padding: 15px 0;
+  padding: 5px 0;
   text-align: center;
+  border-bottom: 1px solid #3f0ca6;
 }
 .team-name-top p{
   font-size: 18px;
@@ -134,6 +135,76 @@
   letter-spacing: 0.1em;
   line-height: 36px;
 }
+/* left-side */
+.team-name:nth-of-type(2) .team-name-top{
+  background-color: black;
+}
+.team-name:nth-of-type(2) .team-name-top p{
+  color: #ffff03;
+}
+.team-name:nth-of-type(3) .team-name-top{
+  background-color: #bdd7ed;
+}
+.team-name:nth-of-type(3) .team-name-top p{
+  color: black;
+}
+
+.team-name:nth-of-type(4) .team-name-top{
+  background-color: #fff;
+}
+.team-name:nth-of-type(4) .team-name-top p{
+  color: #fd1605;
+}
+.team-name:nth-of-type(5) .team-name-top{
+  background-color: #000;
+}
+.team-name:nth-of-type(5) .team-name-top p{
+  color: #eebe00;
+}
+/* right-side */
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(1) .team-name-top{
+  background-color: black;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(1) .team-name-top p{
+  color: #ffff03;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(2) .team-name-top{
+  background-color: #d9d9d9;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(2) .team-name-top p{
+  color: #000;
+}
+
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(3) .team-name-top{
+  background-color: #002060;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(3) .team-name-top p{
+  color: #fff;
+}
+
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(4) .team-name-top{
+  background-color: #fd1600;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(4) .team-name-top p{
+  color: #000;
+}
+
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(5) .team-name-top{
+  background-color: #0070c1;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(5) .team-name-top p{
+  color: #fff;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(6) .team-name-top{
+  background-color: #31589d;
+}
+.teams-flex:nth-of-type(3) .team-name:nth-of-type(6) .team-name-top p{
+  color: #fff;
+}
+
+
+
+
 iframe{
   height: 800px;
   width: 550px;
@@ -150,8 +221,11 @@ iframe{
   font-size: 12px;
   line-height: 36px;
   font-weight: 500;
-  padding: 0 20px;
   letter-spacing: 0;
+}
+.team-link{
+  width: 230px;
+  margin: 0 auto;
 }
 .team-qr{
   width: 70px;
@@ -161,3 +235,117 @@ iframe{
 .team-qr img{
   width: 100%;
 }
+
+/* closing-section */
+
+#closing{
+  text-align: center;
+}
+#closing h5{
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+  letter-spacing: 0.075em;
+}
+
+/* footer-navigation-section */
+
+#footer-navigation{
+  display: flex;
+  width: 100%;
+  height: 165px;
+}
+.box{
+  width: 100%;
+  height:100%;
+  background: url(../img/footer-nav1.png) no-repeat center;
+  background-size: cover;
+}
+.box:nth-of-type(2){
+  width: 100%;
+  height:100%;
+  background: url(../img/footer-nav2.png) no-repeat center;
+  background-size: cover;
+}
+.box:nth-of-type(3){
+  width: 100%;
+  height:100%;
+  background: url(../img/footer-nav3.png) no-repeat center;
+  background-size: cover;
+}
+.box:nth-of-type(4){
+  width: 100%;
+  height:100%;
+  background: url(../img/footer-nav4.png) no-repeat center;
+  background-size: cover;
+}
+.bg-text{
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-text p{
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .05em;
+  font-weight: 500;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  color: white;
+  font-size: 15px;
+}
+#footer-images{
+  display: flex;
+}
+.footer-img-box{
+  width: 25%;
+}
+.footer-img-box img{
+  width: 100%;
+}
+#footer-contents{
+  background: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+  padding: 20px 0;
+}
+#footer-nav{
+  width: 1185px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+#footer-info{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.address{
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+}
+.footer-list{
+  width: 50%;
+}
+.footer-list:nth-of-type(2){
+  display: flex;
+}
+.footer-list:nth-of-type(2) .footer-ul{
+  margin-left: 30px;
+}
+.footer-ul .footer-li{
+  font-size: 15px;
+  line-height: 40px;
+}
+.footer-li a{
+  color: white;
+}
+.end{
+  width: 1185px;
+  margin: 60px auto 0;
+}
+/* footer-end */
