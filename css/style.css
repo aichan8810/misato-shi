@@ -55,6 +55,296 @@
 
 
 /* main */
+/* mv */
+#mv{
+  background: linear-gradient(to right, transparent 5%, #fff 100%), url(../img/mv.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 660px;
+  position: relative;
+}
+#mv-message{
+  width: 50%;
+  background: linear-gradient(to right, transparent 0%, #00aeef 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 60px;
+}
+#img-logo{
+  width: 470px;
+  max-width: none;
+  margin: 0 auto;
+}
+#img-50th{
+  width: 250px;
+  max-width: none;
+  margin: 15px auto;
+}
+#mv-message p{
+  font-size: 27px;
+  text-align: center;
+}
+
+/* news-section */
+
+#news{
+  padding: 50px 0;
+}
+#news-box{
+  width: 1185px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #eeeeee;
+  padding: 30px 85px;
+}
+#news-left{
+  width: 25%;
+  text-align: center;
+}
+#news-left h2{
+  width: 100%;
+  position: relative;
+  font-size: 48px;
+  color: #3f0ca6;
+  letter-spacing: 0.35em;
+  text-align: center;
+  height: fit-content;
+}
+#v-line{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background-color: #3f0ca6;
+}
+.more{
+  display: inline-block;
+  width: 180px;
+  height: 30px;
+  background-color: white;
+  border: 1.5px solid black;
+  line-height: 26px;
+  position: relative;
+  text-align: center;
+
+}
+#news-left span{
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  color: white;
+  -webkit-text-stroke: 1px red;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+#news-right{
+  width: 75%;
+  padding-left: 88px;
+  display: flex;
+  flex-direction: column;
+}
+#news-right li{
+  margin: 15px 0;
+}
+#news-right a{
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.more span{
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: black;
+  height: 100%;
+  display: block;
+  -webkit-text-stroke: none;
+  text-align: center;
+}
+/* others-section */
+#about{
+  background: url(../img/about-img.png) no-repeat center;
+  background-size: cover;
+  width: 847px;
+  height: fit-content;
+  padding: 75px 0;
+  margin: 0 auto 170px;
+  text-align: center;
+}
+.title{
+  font-size: 36px;
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 105.74px;
+  z-index: 2;
+}
+.title::after{
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "MISATO CITY";
+  color: #15dfc9;
+  font-family: 'Verdana';
+  font-weight: bold;
+  font-style: italic;
+  opacity: .5;
+  letter-spacing: 0.4em;
+  display: block;
+  font-size: 70px;
+}
+#about p{
+  font-size: 18px;
+  color: white;
+  margin: 50px auto 30px;
+  width: 370px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#others-flex{
+  display: flex;
+  flex-direction: column;
+}
+#flex-img{
+  width: 840px;
+  position: relative;
+}
+#flex-img p{
+  position: absolute;
+  font-size: 70px;
+  font-family: 'Verdana';
+  font-weight: bold;
+  color: #3f0ca6;
+  opacity: .5;
+  font-style: italic;
+  letter-spacing: 0.4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -50px;
+  text-align: center;
+}
+#flex-img img{
+  width: 100%;
+}
+#flex-text{
+  background-color: #eeeeee;
+  padding: 60px 200px 60px 60px;
+  height: fit-content;
+  width: 660px;
+  margin: -176px 0 100px auto;
+  position: relative;
+  z-index: 2;
+}
+#flex-text h4{
+  font-size: 36px;
+}
+#flex-text p{
+  font-size: 18px;
+  line-height: 30px;
+  margin: 30px 0 25px;
+  letter-spacing: 0.05em;
+}
+
+#half-box{
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+#team-box{
+  background: url(../img/top-team.png) no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+#info-box{
+  background: url(../img/top-info.png) no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+.black{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.black h5{
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  padding-top: 95px;
+}
+.black p{
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* sponsor-section */
+#sponsors{
+  padding: 100px 0;
+}
+#sponsor-content{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 50px 0 60px;
+}
+#sponsor-content .title{
+  color: black;
+  letter-spacing: .4em;
+}
+#sponsor-content .title::after{
+  content: 'SPONSORS';
+  color: #3f0ca6;
+}
+#sponsor-content img{
+  margin: 65px auto;
+}
+/* access-section */
+#access{
+  padding: 100px 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+#access .title{
+  color: black;
+  letter-spacing: .4em;
+}
+
+#access .title::after{
+  content: 'ACCESS';
+  color: #3f0ca6;
+}
+#access p{
+  font-size: 18px;
+  line-height: 30px;
+  white-space: pre;
+  width: fit-content;
+  margin: 0 auto;
+}
+#access iframe{
+  width: 100%;
+  height: 470px;
+}
 /* main-end */
 
 

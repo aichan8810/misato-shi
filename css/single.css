@@ -112,3 +112,57 @@ h3{
   color: white;
   background-color: black;
 }
+
+
+/* responsible */
+
+@media(max-width: 1440px){
+  #contents, #flex-button{
+    width: 71%;
+  }
+  #contents{
+    padding: 6.429vw 8.571vw;
+  }
+  #main-mv{
+    height: clamp(300px, 25.714vw, 360px);
+  }
+  #main-mv p{
+    font-size: clamp(48px, 7.143vw, 100px);
+  }
+  #main-mv h1{
+    font-size: clamp(24px,3.429vw, 48px);
+  }
+  #info-title{
+    font-size: clamp(16px, 1.857vw, 26px);
+  }
+  .explain{
+    font-size: clamp(10px, 1.143vw, 16px);
+  }
+  h2{
+    font-size: clamp(13px, 1.714vw, 24px);
+  }
+  h3{
+    font-size: clamp(11px, 1.571vw, 22px);
+  }
+}
+
+@media(max-width: 767px){
+  #date{
+    font-size: 10px;
+  }
+  #contents, #flex-button{
+    width: 75%;
+  }
+
+  #flex-button{
+    justify-content: center;
+  }
+  #flex-button button{
+    width: 110px;
+    font-size: 10px;
+  }
+  .explain{
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+}
