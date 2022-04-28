@@ -127,3 +127,67 @@
   display: block;
   cursor: pointer;
 }
+
+/* responsible */
+
+
+@media(max-width: 1440px){
+  #main-mv{
+    height: clamp(300px, 25.714vw, 360px);
+  }
+  #main-mv p{
+    font-size: clamp(48px, 7.143vw, 100px);
+  }
+  #main-mv h1{
+    font-size: clamp(24px,3.429vw, 48px);
+  }
+
+  #content{
+    width: 71%;
+  }
+  #years{
+    height: clamp(30px, 4.286vw, 60px);
+  }
+  #years p{
+    font-size: clamp(11px, 1.571vw, 22px);
+  }
+  #schedule{
+    padding: 40px 2.143vw;
+  }
+  .schedule-box{
+    width: clamp(250px, 31.429vw, 440px);
+  }
+  .box-top p{
+    font-size: clamp(14px, 1.429vw, 20px);
+  }
+  .term p, .term-int p{
+    font-size: clamp(10px, 1vw, 14px);
+  }
+  #more-view{
+    width: clamp(160px,18.571vw, 260px);
+    height: clamp(35px, 4.286vw, 60px);
+    font-size: clamp(10px, 1.286vw, 18px);
+  }
+}
+
+@media(max-width: 767px){
+  #main-mv p{
+    line-height: 45.71px;
+    font-size: 7.500vw;
+  }
+  #content{
+    width: 75%;
+  }
+  .schedule-box{
+    width: 325px;
+  }
+  #schedule{
+    justify-content: center;
+    padding: 20px 10.938vw;
+  }
+}
+@media(max-width: 500px){
+  #schedule{
+    padding: 20px 5vw;
+  }
+}
