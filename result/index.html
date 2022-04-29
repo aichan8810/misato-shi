@@ -11,6 +11,61 @@
 
 </head>
 <body>
+  <header>
+    <nav id="header-nav">
+      <picture class="logo-box">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="ロゴ画像">
+        </a>
+      </picture>
+      <ul id="header-ul">
+        <li id="header-li">
+          <a href="../result/index.html" id="header-a">試合結果</a>
+        </li>
+        <li id="header-li">
+          <a href="../news/index.html" id="header-a">新着情報</a>
+        </li>
+        <li id="header-li">
+          <a href="index.html" id="header-a">当連盟について</a>
+        </li>
+        <li id="header-li">
+          <a href="../schedule/index.html" id="header-a">年間スケジュール</a>
+        </li>
+        <li id="header-li">
+          <a href="../information/index.html" id="header-a">連盟概要</a>
+        </li>
+      </ul>
+      <div class="team-info">
+        <a href="../team/index.html">
+          <img src="../img/team-info.png" alt="所属チーム一覧">
+          <span id="team-all">所属チーム一覧</span>
+        </a>
+      </div>
+    </nav>
+    <nav id="header-nav-sp">
+      <picture class="logo-box">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="ロゴ画像">
+        </a>
+      </picture>
+      <div id="ham-box">
+        <span id="line_1"></span>
+        <span id="line_2"></span>
+        <span id="line_3"></span>
+      </div>
+      <ul id="ham-content">
+        <li><a href="../index.html">TOP</a></li>
+        <li><a href="../result/index.html">試合結果</a></li>
+        <li><a href="../news/index.html">新着情報</a></li>
+        <li><a href="../about/index.html">当連盟について</a></li>
+        <li><a href="../schedule/index.html">年間スケジュール</a></li>
+        <li><a href="../information/index.html">連盟概要</a></li>
+        <a href="../team/index.html" id="team-button"><img src="../img/team-info.png" alt="所属チーム一覧">所属チーム一覧</a>
+      </ul>
+    </nav>
+  </header>
+
+
   <main>
     <section id="main-mv">
       <p>MATCH<br>RESULTS</p>
@@ -293,6 +348,109 @@
       </div>
       <button id="more-view">もっと見る</button>
     </section>
+    <div id="footer-navigation">
+      <div id="flex-flow">
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>新着情報</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>試合結果</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>年間スケジュール</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>所属チーム一覧</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footer-images">
+      <picture class="footer-img-box">
+        <img src="./img/footer-img1.png" alt="">
+      </picture>
+      <picture class="footer-img-box">
+        <img src="./img/footer-img2.png" alt="">
+      </picture>
+      <picture class="footer-img-box">
+        <img src="./img/footer-img3.png" alt="">
+      </picture>
+      <picture class="footer-img-box">
+        <img src="./img/footer-img4.png" alt="">
+      </picture>
+    </div>
+    <div id="footer-contents">
+      <nav id="footer-nav">
+        <p id="page-top">PAGE TOP</p>
+        <div class="footer-list">
+          <span id="footer-info">お問い合わせは各チームへお願いいたします。</span>
+          <img src="../img/logo.png" alt="">
+          <p class="address">
+            三郷市少年野球連盟<br>
+            〒000-0000 埼⽟県三郷市〇〇 0-00-0<br>
+            TEL 048-000-0000
+          </p>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a href="../result/index.html">試合結果</a>
+            </li>
+            <li class="footer-li">
+              <a href="../about/index.html">当連盟について</a>
+            </li>
+            <li class="footer-li">
+              <a href="../news/index.html">新着情報</a>
+            </li>
+          </ul>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a href="../schedule/index.html">年間スケジュール</a>
+            </li>
+            <li class="footer-li">
+              <a href="../information/index.html">連盟概要</a>
+            </li>
+            <li class="footer-li">
+              <a href="../team/index.html">所属チーム一覧</a>
+            </li>
+          </ul>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a href="../single/index.html">新型コロナ対策の取り組み</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p class="end">© 2022 Misato City Youth Baseball League. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    $('#page-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0,//ページトップまでスクロール
+    }, 0);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+  </script>
+  <script src="../js/main.js"></script>
 
 </body>
 </html>
