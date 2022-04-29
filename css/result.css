@@ -99,15 +99,22 @@
   border-right: 1px solid black;
   font-size: 14px;
   letter-spacing: .1em;
+  word-wrap: break-word;
 }
-.top-li:nth-of-type(2){
+.top-li[name="t-first"], .bottom-li[name="t-first"]{
+  width: 120px;
+}
+.top-li[name="t-second"], .bottom-li[name="t-second"]{
   width: 140px;
 }
-.top-li:nth-of-type(3){
+.top-li[name="t-third"], .bottom-li[name="t-third"]{
   width: 160px;
 }
-.top-li:nth-of-type(4){
+.top-li[name="t-forth"], .bottom-li[name="t-forth"]{
   width: 324px;
+}
+.top-li[name="t-five"], .bottom-li[name="t-five"]{
+  width: 95px;
 }
 .top-li:nth-of-type(5){
   border: none;
@@ -117,9 +124,9 @@
   height: 112px;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 .bottom-li{
-  width: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,16 +136,12 @@
   font-size: 14px;
   letter-spacing: .1em;
 }
-.bottom-li:nth-of-type(2){
-  width: 140px;
+.bottom-li:nth-of-type(5){
+  border: none;
 }
-.bottom-li:nth-of-type(3){
-  width: 160px;
+.small{
+  display: none;
 }
-.bottom-li:nth-of-type(4){
-  width: 324px;
-}
-
 
 
 #more-view{
@@ -175,6 +178,25 @@
   #years p{
     font-size: clamp(11px, 1.571vw, 22px);
   }
+  .top-li[name="t-first"], .bottom-li[name="t-first"]{
+    width: 14.2%;
+  }
+  .top-li[name="t-second"], .bottom-li[name="t-second"]{
+    width: 16.6%;
+  }
+  .top-li[name="t-third"], .bottom-li[name="t-third"]{
+    width: 19%;
+  }
+  .top-li[name="t-forth"], .bottom-li[name="t-forth"]{
+    width: 38.6%;
+  }
+  .top-li[name="t-five"], .bottom-li[name="t-five"]{
+    width: 11.3%;
+  }
+
+  .top-li, .bottom-li{
+    font-size: clamp(10px, 1vw, 14px);
+  }
 
 
   #more-view{
@@ -195,8 +217,22 @@
   #match-result{
     padding: 20px 40px;
   }
-  .match-top .top-li:nth-of-type(2){
-    width: 65px;
+
+}
+@media(max-width: 640px){
+  #content{
+    width: 85%;
+  }
+  #match-result{
+    padding: 3.125vw 6.250vw;
+  }
+  .small{
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  #content{
+    width: 95%;
   }
 
 }

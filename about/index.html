@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>当連盟に着いて</title>
+  <title>当連盟について</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/about.css">
 </head>
@@ -230,33 +231,35 @@
       </div>
     </section>
     <div id="footer-navigation">
-      <div class="box">
-        <a href="../news/index.html">
-          <div class="bg-text">
-            <p>新着情報</p>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="../result/index.html">
-          <div class="bg-text">
-            <p>試合結果</p>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="../schedule/index.html">
-          <div class="bg-text">
-            <p>年間スケジュール</p>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="../team/index.html">
-          <div class="bg-text">
-            <p>所属チーム一覧</p>
-          </div>
-        </a>
+      <div id="flex-flow">
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>新着情報</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>試合結果</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>年間スケジュール</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <div class="bg-text">
+              <p>所属チーム一覧</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </main>
@@ -277,10 +280,10 @@
     </div>
     <div id="footer-contents">
       <nav id="footer-nav">
-        <button id="page-top"><span></span><p>PAGE TOP</p></button>
+        <p id="page-top">PAGE TOP</p>
         <div class="footer-list">
           <span id="footer-info">お問い合わせは各チームへお願いいたします。</span>
-          <img src="./img/logo.png" alt="">
+          <img src="../img/logo.png" alt="">
           <p class="address">
             三郷市少年野球連盟<br>
             〒000-0000 埼⽟県三郷市〇〇 0-00-0<br>
@@ -318,10 +321,17 @@
         </div>
       </nav>
       <p class="end">© 2022 Misato City Youth Baseball League. All Rights Reserved.</p>
-
     </div>
-
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    $('#page-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0,//ページトップまでスクロール
+    }, 0);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+  </script>
   <script src="../js/main.js"></script>
 </body>
 </html>
