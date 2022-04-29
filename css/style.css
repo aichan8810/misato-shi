@@ -402,3 +402,158 @@ footer{
   margin: 60px auto 0;
 }
 /* footer-end */
+
+
+/* res */
+
+@media(max-width: 1440px){
+  #mv{
+    height: clamp(500px, 47.143vw, 660px);
+  }
+  #img-logo{
+    width: 33.571vw;
+  }
+  #img-50th{
+    width: 17.857vw;
+  }
+  #mv-message p{
+    font-size: clamp(14.5px,1.929vw,  27px);
+  }
+  #news-box{
+    width: 85%;
+  }
+  #about{
+    width: 60.5%;
+  }
+  #flex-img{
+    width: 60%;
+  }
+  #flex-img p{
+    font-size: clamp(34px, 5vw, 70px);
+  }
+  #flex-text{
+    width: 47%;
+    padding: 4.286vw 14.286vw 4.286vw 4.286vw;
+  }
+  #flex-text h4{
+    font-size: clamp(22px, 2.571vw, 36px);
+  }
+  #flex-text p{
+    font-size: clamp(12px,1.286vw,18px);
+  }
+  #sponsor-content{
+    width: 71%;
+  }
+  #access{
+    width: 71%;
+  }
+  #news-right{
+    padding-left: 6.286vw;
+  }
+  #news-box{
+    padding: 30px 6.071vw;
+  }
+  #news-right a{
+    font-size: clamp(12px,1.286vw,18px);
+  }
+  #news-right li{
+    margin: 1.071vw 0;
+  }
+  #news-left h2{
+    font-size: clamp(28px, 3.429vw, 48px);
+  }
+  .more{
+    width: clamp(160px, 12.857vw, 180px);
+  }
+  #about{
+    padding: 5.357vw 0;
+  }
+  .title::after{
+    font-size: clamp(34px, 5vw, 70px);
+  }
+  #about p{
+    margin-top: 3.571vw;
+    font-size: clamp(12px,1.286vw,18px);
+  }
+  .title{
+    font-size: clamp(22px, 2.571vw, 36px);
+  }
+  #sponsor-content img:nth-of-type(1){
+    width: 50vw;
+  }
+  #sponsor-content img:nth-of-type(2){
+    width: 18.5vw;
+    margin: 4.643vw auto;
+  }
+  #access p{
+    font-size: clamp(12px,1.286vw,18px);
+    line-height: 2.143vw;
+  }
+}
+@media(max-width: 767px){
+  #news-box{
+    width: 90%;
+    flex-direction: column;
+  }
+  #news-left h2{
+    text-align: left;
+    border: none;
+  }
+  #news-left{
+    width: 100%;
+    text-align: left;;
+  }
+  #news-right{
+    padding: 0;
+    width: 100%;
+  }
+  #news-left .more, #v-line {
+    display: none;
+  }
+  #v-line{
+    width: 0;
+  }
+  #about{
+    padding: 40px 0;
+    width: 75%;
+  }
+  #about .title{
+    line-height: 70px;
+  }
+  #about p{
+    margin: 0 auto 20px ;
+  }
+  #flex-img{
+    width: 75%;
+    margin: 0 auto;
+  }
+  #flex-text{
+    width: 75%;
+    margin: 0 auto;
+    padding: 25px 95px;
+    text-align: center;
+  }
+  #others-flex{
+    padding-bottom: 50px;
+  }
+  #half-box{
+    flex-direction: column;
+    height: fit-content;
+  }
+  #team-box, #info-box{
+    width: 100%;
+    height: 270px;
+  }
+  #sponsor-content{
+    width: 75%;
+  }
+  #sponsor-content img:nth-of-type(1){
+    width: 85%;
+  }
+  #sponsor-content img:nth-of-type(2){
+    width: 32.5%;
+  }
+  #access{
+    width: 90%;
+  }
+}

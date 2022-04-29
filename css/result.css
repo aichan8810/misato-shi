@@ -192,4 +192,11 @@
   #content{
     width: 75%;
   }
+  #match-result{
+    padding: 20px 40px;
+  }
+  .match-top .top-li:nth-of-type(2){
+    width: 65px;
+  }
+
 }

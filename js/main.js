@@ -16,3 +16,5 @@ box.addEventListener('click', function(){
 box.addEventListener('click', function(){
   document.getElementById('line_3').classList.toggle('line__3');
 });
+
+/*  */
